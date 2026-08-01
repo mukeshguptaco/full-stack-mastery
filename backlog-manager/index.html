@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Backlog Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Product Backlog</h1>
+
+    <input id="backlogInput" type="text" onkeydown="if (event.key === 'Enter') addItem()">
+
+    <button onclick="addItem()">Add</button>
+
+    <ul id="backlogList">
+
+    </ul>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
