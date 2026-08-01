@@ -22,3 +22,10 @@ function addItem() {
         }
     }
 }
+
+async function testBackend() {
+    const response = await fetch("/api/hello");
+    const message = await response.text();
+
+    alert(message);
+}
