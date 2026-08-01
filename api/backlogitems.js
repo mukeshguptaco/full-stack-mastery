@@ -4,7 +4,10 @@ export default function handler(request, response) {
   }
 
   if (request.method == "POST") {
-    const backlogItem = {title: request.body.title};
+    const backlogItem = {
+      id: 1,
+      title: request.body.title
+    };
     response.json(backlogItem);
   }
 }
