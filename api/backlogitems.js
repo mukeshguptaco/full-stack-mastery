@@ -1,7 +1,22 @@
 export default function handler(request, response) {
-  if (request.method == "GET") {
-    response.send("A GET request is received");
-  }
+  if (request.method === "GET") {
+  const backlogItems = [
+    {
+      id: 1,
+      title: "Login Flow"
+    },
+    {
+      id: 2,
+      title: "Dashboard"
+    },
+    {
+      id: 3,
+      title: "Search"
+    }
+  ];
+
+  response.json(backlogItems);
+}
 
   if (request.method == "POST") {
     const backlogItem = {
