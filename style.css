@@ -1,11 +1,11 @@
 body {
-    background: black;
+    background: white;
 }
 
-h1 {
-    color: white;
+h1, h3 {
+    color: black;
 }
 
 p {
-    color: lightgray;
+    color: black;
 }
