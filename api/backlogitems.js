@@ -8,6 +8,6 @@ export default function handler(request, response) {
       id: Date.now(),
       title: request.body.title
     };
-    response.json(backlogItem);
+    response.status(201).json(backlogItem);
   }
 }
