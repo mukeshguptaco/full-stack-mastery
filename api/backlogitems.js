@@ -1,3 +1,3 @@
 export default function handler(request, response) {
-  response.send("Backlog endpoint reached");
+  response.send(request.method);
 }
